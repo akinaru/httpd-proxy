@@ -1,0 +1,11 @@
+version: '2'
+services:
+  httpd:
+    build: .
+    restart: always
+    volumes:
+      - ./apache2.conf:/usr/local/apache2/conf/httpd.conf
+      - ./000-default.conf:/etc/apache2/sites-enabled/000-default.conf
+      - ./key:/usr/local/apache2/conf/key
+    ports:
+      - 443:443
