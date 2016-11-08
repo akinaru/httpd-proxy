@@ -1,6 +1,8 @@
-# httpd proxy minimal docker image
+# Httpd proxy minimal docker image
 
 [![Build Status](https://travis-ci.org/akinaru/httpd-proxy.svg?branch=master)](https://travis-ci.org/akinaru/httpd-proxy)
+[![](https://images.microbadger.com/badges/image/akinaru/httpd-proxy.svg)](https://microbadger.com/images/akinaru/httpd-proxy)
+[![](https://images.microbadger.com/badges/version/akinaru/httpd-proxy.svg)](https://microbadger.com/images/akinaru/httpd-proxy)
 
 A minimal httpd docker image to be run with an already existing configuration
 
