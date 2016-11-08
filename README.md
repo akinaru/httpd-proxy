@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/akinaru/httpd-proxy.svg?branch=master)](https://travis-ci.org/akinaru/httpd-proxy) [![](https://images.microbadger.com/badges/image/akinaru/httpd-proxy.svg)](https://microbadger.com/images/akinaru/httpd-proxy) [![](https://images.microbadger.com/badges/version/akinaru/httpd-proxy.svg)](https://microbadger.com/images/akinaru/httpd-proxy)
 
-A minimal httpd docker image to be run with an already existing configuration with `passenger` module enabled for Redmine (`phusion_passenger`)
+A minimal httpd docker image to be run with an already existing configuration
 
 ## Build image
 
@@ -36,7 +36,6 @@ ServerName www.example.com
 docker run -dit --name httpd-proxy -p 443:443 \
                                    -v "$PWD/apache2.conf":/usr/local/apache2/conf/httpd.conf \
                                    -v "$PWD/000-default.conf":/etc/apache2/sites-enabled/000-default.conf \
-                                   -v "$PWD/passenger.conf":/etc/apache2/mods-available/passenger.conf \
                                    -v "$PWD/key":/usr/local/apache2/conf/key apache-php
 ```
 

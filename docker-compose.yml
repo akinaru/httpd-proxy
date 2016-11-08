@@ -7,6 +7,5 @@ services:
       - ./apache2.conf:/usr/local/apache2/conf/httpd.conf
       - ./000-default.conf:/etc/apache2/sites-enabled/000-default.conf
       - ./key:/usr/local/apache2/conf/key
-      - ./passenger.conf:/etc/apache2/mods-available/passenger.conf
     ports:
       - 443:443

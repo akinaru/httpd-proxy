@@ -9,11 +9,3 @@ RUN a2enmod proxy_balancer
 RUN a2enmod proxy_connect
 RUN a2enmod ssl
 RUN a2enmod cache
-
-RUN apt-get update
-
-# Install Passenger + Apache module
-RUN apt-get install -y libapache2-mod-passenger && ruby
-
-# install passenger module
-RUN a2enmod passenger
